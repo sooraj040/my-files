@@ -1,0 +1,6 @@
+number1=int(input("enter 3 numbers"))
+number2=int(input())
+number3=int(input())
+difference=(number3-number2)
+sum=int(difference+number1)
+print("sum is "+str(sum))
