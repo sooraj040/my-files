@@ -1,4 +1,5 @@
-a=["apple","orange","banana","grapes","anar"]
-for i in a:
-    if i [0] in "aeiouAEIOU":
-     print(i)
+fruits = ["apple", "orange", "banana", "grapes", "anar"]
+
+for fruit in fruits:
+    if fruit[0] in "aeiouAEIOU":
+        print(fruit)

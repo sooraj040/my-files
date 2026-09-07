@@ -1,37 +1,10 @@
-'''my_list=[12,'java','python','string',30]
-my_list.append(40)#to add value 
-print(my_list)'''
+people = []
+answer = "y"
 
-'''my_list=[12,'java','python','string',30]
-my_list.extend(["orange",12])
-print(my_list)'''#to extend value
+while answer == "y":
+    name = input("Name: ")
+    age = input("Age: ")
+    people.append([name, age])
+    answer = input("Add another person? (y/n): ").lower()
 
-'''name="EBIN"
-name.lower()
-print(name.lower())'''
-
-'''name="ebin"
-name.upper()
-print(name.upper())'''
-data=[]
-def a():
-
-    name=(input("enter name"))
-    age=(input("enter age"))
-    people={'name':name,'age':age}
-    data.append(people)
-    print(data)
-   
-
-while True:
-    
-    a()
-    more=(input("do you want to add more (Y/N)"))
-    if more.lower() != 'Y'.lower():
-       break
-
-
-
-print("final list",data)
-    
-
+print("Final list:", people)

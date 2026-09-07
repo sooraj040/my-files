@@ -1,12 +1,8 @@
-'''first,second=0,1
-print(first,second)
-for i in range(6):
-    third=first+second
-    print(third)
-    first,second=second,third'''
+"""Multiplication table using a for loop."""
+# The comprehension builds one formatted line for each multiplier from 1 to 10.
 
-'''
-a=int(input("enter a number"))
-for i in range (1,11):
-    m=a*i
-    print(f"{a}*{i}={m}")'''
+
+number = int(input("Enter a number: "))
+
+for i in range(1, 11):
+    print(number, "x", i, "=", number * i)

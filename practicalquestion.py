@@ -1,19 +1,19 @@
-'''s=input("enter your string:")
-a={}
-for b in s:
-    if b in a:
-        a[b]=a[b]+1
+text = "hello"
+count = {}
+
+for character in text:
+    if character in count:
+        count[character] = count[character] + 1
     else:
-        a[b]=1
-for n in a:
-    print(f"{n}={a[n]}")
-'''
+        count[character] = 1
 
-'''numbers=[19,2,1,23,8]
-n=len(numbers)#to find length of list
-for k in range (n-1):
-    for v in range (n-k-1):
-        if numbers[v]>numbers[v+1]:
-           numbers[v],numbers[v+1]=numbers[v+1],numbers[v]
-print(numbers)'''
+print(count)
 
+numbers = [19, 2, 1, 23, 8]
+
+for end in range(len(numbers) - 1, 0, -1):
+    for index in range(end):
+        if numbers[index] > numbers[index + 1]:
+            numbers[index], numbers[index + 1] = numbers[index + 1], numbers[index]
+
+print(numbers)

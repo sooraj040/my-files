@@ -1,14 +1,8 @@
-'''
-a=['spam','rules','fruits','looks','index']
-print(a[2:4])  #gives index from 2-4 
+"""List slicing example."""
+# A slice creates a new list from the requested start and end positions.
 
-'''
-'''
-a=['spam','rules','fruits','looks','index']
-print(a[2:]) #gives index value from 2 to end of list
+items = ["spam", "rules", "fruits", "looks", "index"]
 
-'''
-
-a=['spam','rules','fruits','looks','index']
-print(a[0:]) #gives index value from 0to end of list
-
+if __name__ == "__main__":
+    print("All items:", items[:])
+    print("Items 2 through 3:", items[2:4])

@@ -1,6 +1,7 @@
-number1=int(input("enter 3 numbers"))
-number2=int(input())
-number3=int(input())
-a=(number3*number2)
-sum=int(a+number1)
-print("sum is "+str(sum))
+numerator = float(input("Enter numerator: "))
+denominator = float(input("Enter denominator: "))
+
+if denominator == 0:
+    print("Denominator cannot be zero.")
+else:
+    print("Result =", numerator / denominator)

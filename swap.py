@@ -1,6 +1,6 @@
-a=20
-b=40
-d=a
-a=b
-b=d
-print("first number is " +str(a), "second  number is "  +str(b))
+first = 20
+second = 40
+
+first, second = second, first
+print("First =", first)
+print("Second =", second)
